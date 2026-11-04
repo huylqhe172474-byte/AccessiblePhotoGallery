@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="addTabIndex()">
+
+    <header>
+        <h1>Accessible Interactive Photo Gallery</h1>
+        <p>Hover over or use the Tab key to explore the images.</p>
+    </header>
+
+    <main>
+
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <section class="gallery" aria-label="Photo gallery">
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image1.jpg"
+                    alt="A beautiful mountain lake surrounded by green mountains.">
+                <figcaption>Mountain Lake</figcaption>
+            </figure>
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image2.jpg"
+                    alt="A beautiful sunset over the ocean.">
+                <figcaption>Ocean Sunset</figcaption>
+            </figure>
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image3.jpg"
+                    alt="The sun rising over a peaceful countryside landscape.">
+                <figcaption>Sunrise Landscape</figcaption>
+            </figure>
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image4.jpg"
+                    alt="A lake with clear water surrounded by mountains and trees.">
+                <figcaption>Clear Mountain Lake</figcaption>
+            </figure>
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image5.jpg"
+                    alt="A beautiful green forest with sunlight shining through the trees.">
+                <figcaption>Green Forest</figcaption>
+            </figure>
+
+            <figure onmouseover="upDate(this.querySelector('img'))"
+                onmouseleave="undo()"
+                onfocus="upDate(this.querySelector('img'))"
+                onblur="undo()">
+                <img src="images/image6.jpg"
+                    alt="Tall snowy mountain peaks under a clear blue sky.">
+                <figcaption>Snowy Mountains</figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Accessible Interactive Photo Gallery - Final Project</p>
+    </footer>
+
+</body>
+</html>
